@@ -1,4 +1,15 @@
-.project
-.settings
-salesforce.schema
-Referenced Packages
+package.xml
+
+installedPackages/*
+
+classes/copado__*
+triggers/copado__*
+pages/copado__*
+
+translations/*
+objectTranslations/*
+
+sites/*
+siteDotComSites/*
+
+documents/*
