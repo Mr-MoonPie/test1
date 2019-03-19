@@ -12,7 +12,6 @@
     <label>E-Bikes</label>
     <navType>Standard</navType>
     <tabs>standard-home</tabs>
-    <tabs>Product_Explorer</tabs>
     <tabs>standard-Account</tabs>
     <tabs>standard-Contact</tabs>
     <tabs>Product__c</tabs>
