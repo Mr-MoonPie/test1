@@ -5,6 +5,7 @@ String MODULE_NAME = 'Module02'; // e.g. Module01
 String DEPLOYMENTNAME = TRAIL_NAME+' '+MODULE_NAME+'';
 String COMMIT_ID = 'afd7b16b9f30a3fd622acce37f8218c41574fe24';
 String COMMIT_NAME = '';
+String BRANCH_NAME = 'Module02-EbikeApp';
 String GITREPOSITORY_NAME = '';
 Boolean SEED_METADATA = true;
 Boolean SEED_DATA = false; 
@@ -30,7 +31,7 @@ private static void insertDestinationOrg(Id dId) {
 }
 
 private static copado__Step__c setGitStepValues(copado__Step__c x) {
-	x.copado__Branch__c = MODULE_NAME;
+	x.copado__Branch__c = BRANCH_NAME;
 	x.copado__Commit_Id__c = COMMIT_ID;
 	x.copado__Commit_Name__c = COMMIT_NAME;
 	x.copado__Git_Repository__c = [select Id from copado__Git_Repository__c where Name=:GITREPOSITORY_NAME Limit 1].Id;
