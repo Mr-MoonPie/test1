@@ -12,7 +12,7 @@ Boolean SEED_DATA = false;
 String DESTINATION_ORG_NAME ='Dev1'; // Options: Dev1, Dev2, UAT, Production, Hotfix, Copado
 
 //[{"t":"ApexClass","n":"AccountOperations","s":true}]
-String STEPDATA_GITMETADATA = '';
+String STEPDATA_GITMETADATA = '[{"t":"CustomTab","n":"Product_Explorer","s":true},{"t":"CustomTab","n":"Product_Family__c","s":true},{"t":"CustomTab","n":"Order__c","s":true},{"t":"CustomTab","n":"Product__c","s":true},{"t":"CustomApplication","n":"EBikes","s":true},{"t":"Layout","n":"Order__c-Order Layout","s":true},{"t":"Layout","n":"Product__c-Product Layout","s":true},{"t":"Layout","n":"Product_Family__c-Product Family Layout","s":true},{"t":"Layout","n":"Order_Item__c-Order Item Layout","s":true},{"t":"ContentAsset","n":"logo","s":true},{"t":"CustomObject","n":"Product_Family__c","s":true},{"t":"CustomObject","n":"Product__c","s":true},{"t":"CustomObject","n":"Order_Item__c","s":true},{"t":"CustomObject","n":"Order__c","s":true},{"t":"Profile","n":"Admin","s":true}]';
 String STEPDATA_APEX = '';
 
 private static copado__Deployment__c insertDeployment() {
