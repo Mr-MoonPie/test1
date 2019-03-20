@@ -6,7 +6,7 @@ String DEPLOYMENTNAME = TRAIL_NAME+' '+MODULE_NAME+'';
 String COMMIT_ID = '3fb9ddd1361e8048028d6019716532f97a1f8254';
 String COMMIT_NAME = '';
 String BRANCH_NAME = 'Module02-EbikeApp';
-String GITREPOSITORY_NAME = '';
+String GITREPOSITORY_NAME = 'E-Bike Copado Trail';
 Boolean SEED_METADATA = true;
 Boolean SEED_DATA = false; 
 String DESTINATION_ORG_NAME ='Dev1'; // Options: Dev1, Dev2, UAT, Production, Hotfix, Copado
@@ -14,6 +14,14 @@ String DESTINATION_ORG_NAME ='Dev1'; // Options: Dev1, Dev2, UAT, Production, Ho
 //[{"t":"ApexClass","n":"AccountOperations","s":true}]
 String STEPDATA_GITMETADATA = '[{"t":"CustomApplication","n":"EBikes","s":true},{"t":"Profile","n":"Admin","s":true},{"t":"CustomObject","n":"Product__c","s":true},{"t":"CustomObject","n":"Order__c","s":true},{"t":"CustomObject","n":"Order_Item__c","s":true},{"t":"CustomObject","n":"Product_Family__c","s":true},{"t":"ContentAsset","n":"logo","s":true},{"t":"CustomTab","n":"Order__c","s":true},{"t":"CustomTab","n":"Product__c","s":true},{"t":"CustomTab","n":"Product_Family__c","s":true},{"t":"Layout","n":"Order__c-Order Layout","s":true},{"t":"Layout","n":"Product_Family__c-Product Family Layout","s":true},{"t":"Layout","n":"Product__c-Product Layout","s":true},{"t":"Layout","n":"Order_Item__c-Order Item Layout","s":true},{"t":"FlexiPage","n":"Product_Record_Page","s":true},{"t":"FlexiPage","n":"Order_Record_Page","s":true},{"t":"FlexiPage","n":"Account_Record_Page","s":true}]';
 String STEPDATA_APEX = '';
+
+private static void checkTrailRepoExists() {
+	if([select Id from copado__Git_Repository__c where Name=:GITREPOSITORY_NAME].size()==0){
+		copado__Git_Repository__c repo = new copado__Git_Repository__c(Name=GITREPOSITORY_NAME);
+		repo.copado__URI__c = 'TBC';
+		insert repo;	
+	}
+}
 
 private static copado__Deployment__c insertDeployment() {
 	copado__Deployment__c x = new copado__Deployment__c();
@@ -63,6 +71,7 @@ private static Attachment insertAttachment(Id parentId, String name, String b) {
 
 
 //Execute Apex anonymous code DO NOT MODIFY THE BELOW CODE
+checkTrailRepoExists();
 copado__Deployment__c depl = insertDeployment();
 
 if(SEED_METADATA) {
