@@ -8,7 +8,7 @@ String COMMIT_NAME = '';
 String BRANCH_NAME = 'Module02-CopadoOrg';
 String GITREPOSITORY_NAME = 'E-Bike Copado Trail';
 Boolean SEED_METADATA = true;
-Boolean SEED_DATA = false; 
+Boolean SEED_DATA = true; 
 String DESTINATION_ORG_NAME ='Copado'; // Options: Dev1, Dev2, UAT, Production, Hotfix, Copado
 
 //[{"t":"ApexClass","n":"AccountOperations","s":true}]
