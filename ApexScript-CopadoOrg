@@ -12,7 +12,7 @@ Boolean SEED_DATA = true;
 String DESTINATION_ORG_NAME ='Copado'; // Options: Dev1, Dev2, UAT, Production, Hotfix, Copado
 
 //[{"t":"ApexClass","n":"AccountOperations","s":true}]
-String STEPDATA_GITMETADATA = '[{"t":"Layout","n":"copado__User_Story__c-copado__User Story Layout","s":true},{"t":"Layout","n":"copado__Project__c-copado__Project Layout","s":true},{"t":"Layout","n":"copado__Org__c-copado__Org Layout","s":true},{"t":"Layout","n":"copado__Environment__c-copado__Environment Layout","s":true},{"t":"Layout","n":"copado__Deployment_Flow_Step__c-copado__Deployment Flow Step Layout","s":true},{"t":"Layout","n":"copado__Deployment_Flow__c-copado__Deployment Flow Layout","s":true},{"t":"Profile","n":"Admin","s":true}';
+String STEPDATA_GITMETADATA = '[{"t":"Layout","n":"copado__User_Story__c-copado__User Story Layout","s":true},{"t":"Layout","n":"copado__Project__c-copado__Project Layout","s":true},{"t":"Layout","n":"copado__Org__c-copado__Org Layout","s":true},{"t":"Layout","n":"copado__Environment__c-copado__Environment Layout","s":true},{"t":"Layout","n":"copado__Deployment_Flow_Step__c-copado__Deployment Flow Step Layout","s":true},{"t":"Layout","n":"copado__Deployment_Flow__c-copado__Deployment Flow Layout","s":true},{"t":"Profile","n":"Admin","s":true}]';
 String STEPDATA_APEX = '';
 
 private static void checkTrailRepoExists() {
