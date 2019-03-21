@@ -66,8 +66,11 @@ private static Attachment insertAttachment(Id parentId, String name, String b) {
 	insert x;
 	return x;
 }
-
-
+ 
+private static String createCacheRefreshString(String recordId, String apiKey) {
+	String s = '{"type":"wait","method":"POST","url":"https://copado.herokuapp.com/json/v1/webhook/metadata/'+recordId+'?api_key='+apiKey+'","body":"","queryParameters":[["api_key","'+apiKey+'"]],"headers":[]}';
+	return s;
+}
 
 
 //Execute Apex anonymous code DO NOT MODIFY THE BELOW CODE
@@ -79,9 +82,16 @@ if(SEED_METADATA) {
 	insert step1;
 	Attachment step1att = insertAttachment(step1.Id, 'MetaData', STEPDATA_GITMETADATA);
 	updateStep(step1, step1att.Id);
+
+	Id recordId = [select Id from copado__Org__c where Name=:DESTINATION_ORG_NAME limit 1].Id;
+	User u = [select Id, Division from User where Id=:UserInfo.getUserId() limit 1];
+	String cacheRefreshString = createCacheRefreshString(recordId, u.Division);
+	copado__Step__c cacheRefresh = createDeploymentStep(depl.Id, 2, 'URL Callout', 'Cache refresh');
+	cacheRefresh.copado__DataJson__c = cacheRefreshString;
+	insert cacheRefresh;
 }
 if(SEED_DATA) {
-	copado__Step__c step2 = createDeploymentStep(depl.Id, 2, 'Apex', MODULE_NAME+' data');
+	copado__Step__c step2 = createDeploymentStep(depl.Id, 3, 'Apex', MODULE_NAME+' data');
 	insert step2;
 	Attachment step2att = insertAttachment(step2.Id, 'Apex', STEPDATA_APEX);
 }
