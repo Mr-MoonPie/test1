@@ -1,7 +1,7 @@
 // Parameters
 Boolean SENDDEPLOYMENTEMAIL = false;
 String TRAIL_NAME ='EBike';
-String MODULE_NAME = 'Module04'; // e.g. Module01
+String MODULE_NAME = 'Module05'; // e.g. Module01
 String DEPLOYMENTNAME = TRAIL_NAME+' '+MODULE_NAME+'';
 String COMMIT_ID = '';
 String COMMIT_NAME = '';
