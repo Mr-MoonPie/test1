@@ -7,7 +7,7 @@ String COMMIT_ID = '';
 String COMMIT_NAME = '';
 String BRANCH_NAME = 'Module04-CopadoOrg';
 String GITREPOSITORY_NAME = 'E-Bike Copado Trail';
-Boolean SEED_METADATA = false;
+Boolean SEED_METADATA = true;
 Boolean SEED_DATA = true; 
 String DESTINATION_ORG_NAME ='Copado'; // Options: Dev1, Dev2, UAT, Production, Hotfix, Copado
 
