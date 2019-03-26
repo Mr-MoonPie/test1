@@ -10,7 +10,7 @@ String MODULE_NAME = 'Module04';
 String DEPLOYMENTNAME = TRAIL_NAME+' '+MODULE_NAME;
 String GITREPOSITORY_NAME = 'E-Bike Copado Trail';
 String GITREPOSITORY_URL = 'TBC';
-String DESTINATION_ORG_NAME ='Dev1'; // Options: Dev1, Dev2, UAT, Production, Hotfix, Copado
+String DESTINATION_ORG_NAME ='Dev2'; // Options: Dev1, Dev2, UAT, Production, Hotfix, Copado
 
 Id orgCred_copadoOrg = [select Id from copado__Org__c where copado__Environment__r.Name='Copado' limit 1].Id;
 Id orgCred_sandbox = [select Id from copado__Org__c where copado__Environment__r.Name=:DESTINATION_ORG_NAME limit 1].Id;
