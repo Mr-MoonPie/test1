@@ -23,12 +23,21 @@ public class TestProductController {
     }
 
     @isTest
+    static void loopQuery() {
+        Product__c[] products = ProductController.getSimilarProducts(productToCompare.Id, null);
+        for(Product__c p : products){
+            //for each product look up an account
+            Account a = [select Id, Name from Accout where Type=:p.Category__c limit 1];
+        }
+    }
+
+    @isTest
     static void testGetProducts() {
         String filters = '{"searchKey":"Sample", "maxPrice":2000, "categories": ["Mountain"], "levels": ["Beginner"], "materials":["Carbon"]}, 1';
         PagedResult result = ProductController.getProducts(filters, 1);
         System.assertEquals(result.records.size(), 2);
     }
-
+/*
     @isTest
     static void testGetSimilarProducts() {
         String filters = '{"searchKey":"Sample", "maxPrice":2000, "categories": ["Mountain"], "levels": ["Beginner"], "materials":["Carbon"]}, 1';
@@ -37,5 +46,5 @@ public class TestProductController {
         Product__c[] products = ProductController.getSimilarProducts(productToCompare.Id, null);
         System.assertEquals(products.size(), 1);
     }
-
+*/
 }
