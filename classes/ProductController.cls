@@ -1,6 +1,6 @@
 public with sharing class ProductController {
 
-    static Integer PAGE_SIZE = 6;
+    static Integer PAGE_SIZE = 3;
 
     public class Filters {
         public String searchKey { get;set; }
