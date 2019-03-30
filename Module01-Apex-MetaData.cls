@@ -9,7 +9,7 @@ String TRAIL_NAME ='EBike';
 String MODULE_NAME = 'Module01-CopadoOrg';
 String DEPLOYMENTNAME = TRAIL_NAME+' '+MODULE_NAME;
 String GITREPOSITORY_NAME = 'E-Bike Copado Trail';
-String GITREPOSITORY_URL = 'TBC';
+String GITREPOSITORY_URL = 'https://github.com/Mr-MoonPie/test1';
 
 Id orgCred_copadoOrg = [select Id from copado__Org__c where copado__Environment__r.Name='Copado' limit 1].Id;
 
