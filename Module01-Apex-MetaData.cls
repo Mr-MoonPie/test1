@@ -6,7 +6,7 @@
  */
 
 String TRAIL_NAME ='EBike';
-String MODULE_NAME = 'Module01';
+String MODULE_NAME = 'Module01-CopadoOrg';
 String DEPLOYMENTNAME = TRAIL_NAME+' '+MODULE_NAME;
 String GITREPOSITORY_NAME = 'E-Bike Copado Trail';
 String GITREPOSITORY_URL = 'TBC';
