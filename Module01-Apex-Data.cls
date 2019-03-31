@@ -5,6 +5,9 @@ update prod;
 
 String GITREPOSITORY_NAME = 'E-Bike Copado Trail';
 String GITREPOSITORY_URL = 'https://github.com/Mr-MoonPie/test1';
-copado__Git_Repository__c repo = new copado__Git_Repository__c(Name=GITREPOSITORY_NAME);
-repo.copado__URI__c = GITREPOSITORY_URL;
-insert repo;
+List<copado__Git_Repository__c> repos = [select Id from copado__Git_Repository__c where Name=:GITREPOSITORY_NAME];
+if(repos.size()==0) {
+	copado__Git_Repository__c repo = new copado__Git_Repository__c(Name=GITREPOSITORY_NAME);
+	repo.copado__URI__c = GITREPOSITORY_URL;
+	insert repo;
+}
