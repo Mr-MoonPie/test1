@@ -7,6 +7,4 @@ update prod;
 String GITREPOSITORY_URL = 'https://github.com/Mr-MoonPie/test1';
 copado__Git_Repository__c repo = new copado__Git_Repository__c(Name=GITREPOSITORY_NAME);
 repo.copado__URI__c = GITREPOSITORY_URL;
-repo.copado__Username__c = 'none';
-repo.copado__Password__c = 'none';
 insert repo;
