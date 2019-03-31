@@ -165,10 +165,6 @@
         <visibility>Visible</visibility>
     </tabSettings>
     <tabSettings>
-        <tab>Product_Explorer</tab>
-        <visibility>Visible</visibility>
-    </tabSettings>
-    <tabSettings>
         <tab>Product_Family__c</tab>
         <visibility>Visible</visibility>
     </tabSettings>
