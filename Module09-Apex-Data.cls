@@ -38,7 +38,7 @@ testScriptSteps.add(tss2);
 insert testScriptSteps;
 
 copado__Test_Run__c tr = new copado__Test_Run__c(copado__User_Story__c=u1.Id);
-tr.copado__Environment__c= dev1.copado__Environment__r.Name;
+tr.copado__Environment__c= dev1.copado__Environment__c;
 tr.copado__Project__c = p.Id;
 tr.copado__Test_Phase__c = 'Developer';
 tr.copado__Test_Script__c = ts.Id;
