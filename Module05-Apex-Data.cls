@@ -7,5 +7,5 @@ u1.copado__Project__c = p.Id;
 u1.copado__Status__c = 'Approved';
 u1.copado__Functional_Specifications__c = 'TBC';
 u1.copado__Org_Credential__c = dev1.Id;
-u1.copado__Environment__c = dev2.copado__Environment__c;
+u1.copado__Environment__c = dev1.copado__Environment__c;
 upsert u1 Module_External_Id__c;
