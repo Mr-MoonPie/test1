@@ -21,6 +21,6 @@ u2.copado__Project__c = p.Id;
 u2.copado__Status__c = 'Approved';
 u2.copado__Functional_Specifications__c = '';
 u2.copado__Org_Credential__c = orgCredentials.get('Dev2').Id;
-u1.copado__Environment__c = orgCredentials.get('Dev2').copado__Environment__c;
+u2.copado__Environment__c = orgCredentials.get('Dev2').copado__Environment__c;
 stories.add(u2);
 upsert stories Module_External_Id__c;
