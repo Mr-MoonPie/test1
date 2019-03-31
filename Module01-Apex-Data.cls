@@ -2,3 +2,11 @@ copado__Environment__c prod = [select Id, Name, copado__Run_all_tests__c, copado
 prod.copado__Run_all_tests__c = true;
 prod.copado__Minimum_Apex_Test_Coverage__c = 85;
 update prod;
+
+
+String GITREPOSITORY_URL = 'https://github.com/Mr-MoonPie/test1';
+copado__Git_Repository__c repo = new copado__Git_Repository__c(Name=GITREPOSITORY_NAME);
+repo.copado__URI__c = GITREPOSITORY_URL;
+repo.copado__Username__c = 'none';
+repo.copado__Password__c = 'none';
+insert repo;
