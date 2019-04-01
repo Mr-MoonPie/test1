@@ -72,18 +72,6 @@
                 <behavior>Edit</behavior>
                 <field>copado__User_Story_Title__c</field>
             </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>copado__userStory_Role__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>copado__userStory_need__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>copado__userStory_reason__c</field>
-            </layoutItems>
         </layoutColumns>
         <style>OneColumn</style>
     </layoutSections>
@@ -271,15 +259,6 @@
         <fields>copado__Score_v11__c</fields>
         <fields>copado__Number_of_Violations__c</fields>
         <relatedList>copado__Static_Code_Analysis_Result__c.copado__User_Story__c</relatedList>
-    </relatedLists>
-    <relatedLists>
-        <fields>NAME</fields>
-        <fields>copado__Test_Description__c</fields>
-        <fields>copado__Peer_Reviewer__c</fields>
-        <fields>copado__Status__c</fields>
-        <fields>copado__Project__c</fields>
-        <fields>copado__Sprint__c</fields>
-        <relatedList>copado__Test_Script__c.copado__User_Story__c</relatedList>
     </relatedLists>
     <relatedLists>
         <fields>NAME</fields>
