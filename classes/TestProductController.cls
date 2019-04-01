@@ -24,10 +24,9 @@ public class TestProductController {
 
     @isTest
     static void loopQuery() {
-        Product__c[] products = ProductController.getSimilarProducts(productToCompare.Id, null);
-        for(Product__c p : products){
+        for(Product__c p : [select Id, Category__c from Product__c]){
             //for each product look up an account
-            Account a = [select Id, Name from Accout where Type=:p.Category__c limit 1];
+            Account a = [select Id, Name from Account where Type=:p.Category__c limit 1];
         }
     }
 /*
