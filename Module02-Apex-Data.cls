@@ -28,6 +28,6 @@ u2.copado__Project__c = p.Id;
 u2.copado__Status__c = 'Approved';
 u2.copado__Functional_Specifications__c = 'We will commit all the Custom Tabs and EBikes Custom Application in this User Story. As our Custom Application has a logo, we will also commit the ContentAsset called, “logo”.';
 u2.copado__Org_Credential__c = orgCredentials.get('Dev1').Id;
-u1.copado__Environment__c = orgCredentials.get('Dev1').copado__Environment__c;
+u2.copado__Environment__c = orgCredentials.get('Dev1').copado__Environment__c;
 stories.add(u2);
 upsert stories Module_External_Id__c;
