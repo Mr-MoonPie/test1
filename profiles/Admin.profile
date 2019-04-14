@@ -151,7 +151,7 @@
     </tabVisibilities>
     <tabVisibilities>
         <tab>copado__Promotion__c</tab>
-        <visibility>DefaultOn</visibility>
+        <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>
         <tab>copado__Release__c</tab>
