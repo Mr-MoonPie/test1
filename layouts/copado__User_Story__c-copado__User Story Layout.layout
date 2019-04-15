@@ -167,6 +167,16 @@
         <sortField>copado__Git_Org_Commit__c.copado__Commit_Date__c</sortField>
         <sortOrder>Desc</sortOrder>
     </relatedLists>
+    <relatedLists>
+        <fields>NAME</fields>
+        <fields>copado__Promotion__c.NAME</fields>
+        <fields>copado__Promotion__c.copado__Status__c</fields>
+        <fields>copado__Promotion__c.copado__Source_Environment__c</fields>
+        <fields>copado__Promotion__c.copado__Source_Org_Credential__c</fields>
+        <fields>copado__Promotion__c.copado__Destination_Environment__c</fields>
+        <fields>copado__Promotion__c.copado__Destination_Org_Credential__c</fields>
+        <relatedList>copado__Promoted_User_Story__c.copado__User_Story__c</relatedList>
+    </relatedLists>
     <showEmailCheckbox>false</showEmailCheckbox>
     <showHighlightsPanel>false</showHighlightsPanel>
     <showInteractionLogPanel>false</showInteractionLogPanel>
