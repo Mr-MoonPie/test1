@@ -2,6 +2,7 @@
 <Layout xmlns="http://soap.sforce.com/2006/04/metadata">
     <customButtons>copado__Run_Static_Code_Analysis</customButtons>
     <customButtons>copado__Commit_Files</customButtons>
+    <customButtons>copado__Perform_Validation</customButtons>
     <excludeButtons>Submit</excludeButtons>
     <layoutSections>
         <customLabel>false</customLabel>
