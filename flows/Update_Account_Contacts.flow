@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
     <assignments>
-        <description>A simple flow to set the MailingCountry for related contacts against an account with the account's BillingCountry value.</description>
         <name>Add_contact_to_update_list</name>
         <label>Add contact to update list</label>
         <locationX>927</locationX>
@@ -33,6 +32,7 @@
             <targetReference>Add_contact_to_update_list</targetReference>
         </connector>
     </assignments>
+    <description>A simple flow to set the MailingCountry for related contacts against an account with the account's BillingCountry value.</description>
     <interviewLabel>Update Account Contacts {!$Flow.CurrentDateTime}</interviewLabel>
     <label>Update Account Contacts</label>
     <loops>
