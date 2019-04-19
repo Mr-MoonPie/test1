@@ -37,5 +37,4 @@ public class TestProductController {
         Product__c[] products = ProductController.getSimilarProducts(productToCompare.Id, null);
         System.assertEquals(products.size(), 1);
     }
-
 }
