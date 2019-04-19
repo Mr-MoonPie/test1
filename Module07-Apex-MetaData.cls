@@ -108,8 +108,4 @@ steps.add(createUrlCalloutStep(depl.Id, 1, 'Configure Sandbox-Dev1', sandboxCIjo
 String sandboxCIjobURI2 = createRunCIjobString(cijobs[1].Id, u.Division);
 steps.add(createUrlCalloutStep(depl.Id, 2, 'Configure Sandbox-Dev2', sandboxCIjobURI2));
 
-//Create URL callout deployment steps (Refresh cache) - Not necessary here as we are not creating new metadata.
-//String cacheRefreshString = createCacheRefreshString(orgCred_sandbox1, u.Division);
-//steps.add(createUrlCalloutStep(depl.Id, 5, 'Refresh Sandbox cache', cacheRefreshString));
-
 insert steps;
