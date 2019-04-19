@@ -96,11 +96,17 @@ Id gitRepoId = checkTrailRepoExists();
 copado__Deployment__c depl = insertDeployment(orgCred_copadoOrg);
 
 //Creating CI records
+copado__Continuous_Integration__c copadoOrgCiJob = createCIrecord(MODULE_NAME+'-CopadoOrg', orgCred_copadoOrg, gitRepoId);
 copado__Continuous_Integration__c sandboxCIjob1 = createCIrecord(MODULE_NAME+'-EbikeApp-Dev1', orgCred_sandbox1, gitRepoId);
 copado__Continuous_Integration__c sandboxCIjob2 = createCIrecord(MODULE_NAME+'-EbikeApp-Dev2', orgCred_sandbox2, gitRepoId);
+cijobs.add(copadoOrgCiJob);
 cijobs.add(sandboxCIjob1);
 cijobs.add(sandboxCIjob2);
 insert cijobs;
+
+//Create URL callout deployment steps (Copado Org)
+String copadoOrgCiJobURI = createRunCIjobString(cijobs[0].Id, u.Division);
+steps.add(createUrlCalloutStep(depl.Id, 0, 'Configure CopadoOrg', copadoOrgCiJobURI));
 
 //Create URL callout deployment steps (Sandbox)
 String sandboxCIjobURI1 = createRunCIjobString(cijobs[0].Id, u.Division);
