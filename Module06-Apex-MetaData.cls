@@ -12,6 +12,7 @@ String GITREPOSITORY_NAME = 'E-Bike Copado Trail';
 String GITREPOSITORY_URL = 'https://github.com/Mr-MoonPie/test1';
 String DESTINATION_ORG_NAME ='Hotfix'; // Options: Dev1, Dev2, UAT, Production, Hotfix, Copado
 
+Id orgCred_copadoOrg = [select Id from copado__Org__c where copado__Environment__r.Name='Copado' limit 1].Id;
 Id orgCred_sandbox = [select Id from copado__Org__c where copado__Environment__r.Name=:DESTINATION_ORG_NAME limit 1].Id;
 
 
@@ -100,10 +101,10 @@ insert cijobs;
 
 //Create URL callout deployment steps (Sandbox)
 String sandboxCIjobURI = createRunCIjobString(cijobs[0].Id, u.Division);
-steps.add(createUrlCalloutStep(depl.Id, 1, 'Configure Sandbox', sandboxCIjobURI));
+steps.add(createUrlCalloutStep(depl.Id, 2, 'Configure Sandbox', sandboxCIjobURI));
 
 //Create URL callout deployment steps (Refresh cache)
 String cacheRefreshString = createCacheRefreshString(orgCred_sandbox, u.Division);
-steps.add(createUrlCalloutStep(depl.Id, 2, 'Refresh Sandbox cache', cacheRefreshString));
+steps.add(createUrlCalloutStep(depl.Id, 3, 'Refresh Sandbox cache', cacheRefreshString));
 
 insert steps;
