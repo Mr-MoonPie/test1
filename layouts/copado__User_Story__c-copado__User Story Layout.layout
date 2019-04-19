@@ -282,6 +282,27 @@
         <sortField>copado__Git_Org_Commit__c.copado__Commit_Date__c</sortField>
         <sortOrder>Desc</sortOrder>
     </relatedLists>
+    <relatedLists>
+        <excludeButtons>New</excludeButtons>
+        <fields>NAME</fields>
+        <fields>copado__Status__c</fields>
+        <fields>copado__Status_Icon__c</fields>
+        <fields>copado__Metadata_API_Name__c</fields>
+        <relatedList>copado__User_Story_Metadata__c.copado__User_Story__c</relatedList>
+    </relatedLists>
+    <relatedLists>
+        <excludeButtons>New</excludeButtons>
+        <fields>NAME</fields>
+        <fields>CREATED_DATE</fields>
+        <fields>copado__Request_Number__c</fields>
+        <fields>copado__User_Avatar__c</fields>
+        <fields>copado__State__c</fields>
+        <fields>copado__Merged__c</fields>
+        <fields>copado__Url__c</fields>
+        <relatedList>copado__Pull_Request__c.copado__User_Story__c</relatedList>
+        <sortField>CREATED_DATE</sortField>
+        <sortOrder>Desc</sortOrder>
+    </relatedLists>
     <showEmailCheckbox>false</showEmailCheckbox>
     <showHighlightsPanel>false</showHighlightsPanel>
     <showInteractionLogPanel>false</showInteractionLogPanel>
