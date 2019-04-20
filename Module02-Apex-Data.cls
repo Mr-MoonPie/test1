@@ -11,6 +11,7 @@ copado__Project__c p = new copado__Project__c(Name='E Bike Application', Module_
 p.copado__Deployment_Flow__c = f.Id;
 p.copado__Status__c = 'In progress';
 p.copado__Description__c = 'This is the record for our project where we will create the EBike application.';
+p.copado__Index_Metadata__c = true;
 upsert p Module_External_Id__c;
 
 copado__User_Story__c u1 = new copado__User_Story__c(Module_External_Id__c='Ebike-Module2-US1');
