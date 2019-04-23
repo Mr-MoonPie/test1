@@ -30,7 +30,8 @@ copado__User_Story__c u2 = new copado__User_Story__c(Module_External_Id__c='Ebik
 u2.copado__User_Story_Title__c = 'Module 2: EBike application and tabs';
 u2.copado__Project__c = p.Id;
 u2.copado__Status__c = 'Approved';
-u2.copado__Functional_Specifications__c = 'We will commit all the Custom Tabs and EBikes Custom Application in this User Story. As our Custom Application has a logo, we will also commit the ContentAsset called, “logo”.';
+u1.copado__Functional_Specifications__c = 'Provide an easy way for users to access and navigate the e-bike application.';
+u2.copado__Technical_Specifications__c = 'We will commit all the Custom Tabs and EBikes Custom Application in this User Story. As our Custom Application has a logo, we will also commit the ContentAsset called, “logo”.';
 u2.copado__Org_Credential__c = orgCredentials.get('Dev1').Id;
 u2.copado__Environment__c = orgCredentials.get('Dev1').copado__Environment__c;
 stories.add(u2);
