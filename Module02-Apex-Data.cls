@@ -20,7 +20,8 @@ copado__User_Story__c u1 = new copado__User_Story__c(Module_External_Id__c='Ebik
 u1.copado__User_Story_Title__c = 'Module 2: Object Model for Bike app';
 u1.copado__Project__c = p.Id;
 u1.copado__Status__c = 'Approved';
-u1.copado__Functional_Specifications__c = 'The object model will consist of an Order, Order Item, Product_Family__c and Product__c objects. We will also commit the Admin profile with this User Story to ensure that admins have permissions when we deploy this to other orgs.';
+u1.copado__Functional_Specifications__c = 'Create a data model that supports the creation of Orders and its associated items for products.';
+u1.copado__Technical_Specifications__c = 'The object model will consist of an Order, Order Item, Product_Family__c and Product__c objects. We will also commit the Admin profile with this User Story to ensure that admins have permissions when we deploy this to other orgs.';
 u1.copado__Org_Credential__c = orgCredentials.get('Dev1').Id;
 u1.copado__Environment__c = orgCredentials.get('Dev1').copado__Environment__c;
 stories.add(u1);
