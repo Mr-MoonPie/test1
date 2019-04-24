@@ -54,27 +54,6 @@
         <style>OneColumn</style>
     </layoutSections>
     <layoutSections>
-        <customLabel>true</customLabel>
-        <detailHeading>true</detailHeading>
-        <editHeading>true</editHeading>
-        <label>Project Summary</label>
-        <layoutColumns>
-            <layoutItems>
-                <reportChartComponent>
-                    <cacheData>false</cacheData>
-                    <contextFilterableField>FK_CUSTENT_ID</contextFilterableField>
-                    <hideOnError>true</hideOnError>
-                    <includeContext>true</includeContext>
-                    <reportName>Story_Point_totals_by_Project_and_Status</reportName>
-                    <showTitle>true</showTitle>
-                    <size>SMALL</size>
-                </reportChartComponent>
-            </layoutItems>
-        </layoutColumns>
-        <layoutColumns/>
-        <style>TwoColumnsLeftToRight</style>
-    </layoutSections>
-    <layoutSections>
         <customLabel>false</customLabel>
         <detailHeading>false</detailHeading>
         <editHeading>true</editHeading>
@@ -112,44 +91,12 @@
     </miniLayout>
     <relatedLists>
         <fields>NAME</fields>
-        <fields>copado__Start_Date__c</fields>
-        <fields>copado__End_Date__c</fields>
-        <fields>copado__Status__c</fields>
-        <fields>copado__Story_points__c</fields>
-        <relatedList>copado__Sprint__c.copado__Project__c</relatedList>
-    </relatedLists>
-    <relatedLists>
-        <customButtons>copado__Mass_Add_User_Stories</customButtons>
-        <fields>NAME</fields>
         <fields>copado__User_Story_Title__c</fields>
-        <fields>copado__userStory_Role__c</fields>
-        <fields>copado__userStory_need__c</fields>
-        <fields>copado__userStory_reason__c</fields>
         <fields>copado__Status__c</fields>
-        <fields>copado__Story_Points_SFDC__c</fields>
-        <fields>copado__Story_Points_Other__c</fields>
-        <fields>copado__Parent_Epic_Title__c</fields>
-        <fields>copado__Promote_Change__c</fields>
+        <fields>copado__Environment__c</fields>
         <relatedList>copado__User_Story__c.copado__Project__c</relatedList>
-    </relatedLists>
-    <relatedLists>
-        <fields>TASK.SUBJECT</fields>
-        <fields>TASK.WHO_NAME</fields>
-        <fields>ACTIVITY.TASK</fields>
-        <fields>TASK.DUE_DATE</fields>
-        <fields>TASK.STATUS</fields>
-        <fields>TASK.PRIORITY</fields>
-        <fields>CORE.USERS.FULL_NAME</fields>
-        <relatedList>RelatedActivityList</relatedList>
-    </relatedLists>
-    <relatedLists>
-        <fields>TASK.SUBJECT</fields>
-        <fields>TASK.WHO_NAME</fields>
-        <fields>ACTIVITY.TASK</fields>
-        <fields>TASK.DUE_DATE</fields>
-        <fields>CORE.USERS.FULL_NAME</fields>
-        <fields>TASK.LAST_UPDATE</fields>
-        <relatedList>RelatedHistoryList</relatedList>
+        <sortField>copado__User_Story_Title__c</sortField>
+        <sortOrder>Asc</sortOrder>
     </relatedLists>
     <relatedLists>
         <fields>NAME</fields>
