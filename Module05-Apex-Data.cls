@@ -1,9 +1,8 @@
 copado__Org__c dev1 = [select Id, Name, copado__Environment__c from copado__Org__c where Name='Dev1' limit 1];
-copado__Project__c p = [select Id from copado__Project__c where Name='E Bike Application' and Module_External_Id__c='EBike-Project' limit 1];
 
 copado__User_Story__c u1 = new copado__User_Story__c(Module_External_Id__c='Ebike-Module5-US1');
 u1.copado__User_Story_Title__c = 'Module 5: EBike apex code + test classes';
-u1.copado__Project__c = p.Id;
+u1.copado__Project__r = new copado__Project__c(Module_External_Id__c='EBike-Project');
 u1.copado__Status__c = 'Approved';
 u1.copado__Functional_Specifications__c = 'TBC';
 u1.copado__Org_Credential__c = dev1.Id;

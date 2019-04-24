@@ -11,3 +11,13 @@ if(repos.size()==0) {
 	repo.copado__URI__c = GITREPOSITORY_URL;
 	insert repo;
 }
+
+copado__Deployment_Flow__c f = [select Id from copado__Deployment_Flow__c where Name='Copado Playground' limit 1];
+copado__Project__c p = new copado__Project__c(Name='E Bike Application', Module_External_Id__c='EBike-Project');
+p.copado__Deployment_Flow__c = f.Id;
+p.copado__Status__c = 'In progress';
+p.copado__Description__c = 'This is the record for our project where we will create the EBike application.';
+p.copado__Index_Metadata__c = true;
+p.copado__Start_Date__c = Date.today();
+p.copado__End_Date__c = Date.today().addDays(30);
+upsert p Module_External_Id__c;
