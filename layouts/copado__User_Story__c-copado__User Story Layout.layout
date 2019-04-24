@@ -377,6 +377,7 @@
         <relatedList>copado__User_Story_Task__c.copado__User_Story__c</relatedList>
     </relatedLists>
     <relatedLists>
+        <excludeButtons>New</excludeButtons>
         <fields>NAME</fields>
         <fields>copado__Promotion__c.NAME</fields>
         <fields>copado__Promotion__c.copado__Status__c</fields>
@@ -385,25 +386,6 @@
         <fields>copado__Promotion__c.copado__Destination_Environment__c</fields>
         <fields>copado__Promotion__c.copado__Destination_Org_Credential__c</fields>
         <relatedList>copado__Promoted_User_Story__c.copado__User_Story__c</relatedList>
-    </relatedLists>
-    <relatedLists>
-        <fields>TASK.SUBJECT</fields>
-        <fields>TASK.WHO_NAME</fields>
-        <fields>ACTIVITY.TASK</fields>
-        <fields>TASK.DUE_DATE</fields>
-        <fields>TASK.STATUS</fields>
-        <fields>TASK.PRIORITY</fields>
-        <fields>CORE.USERS.FULL_NAME</fields>
-        <relatedList>RelatedActivityList</relatedList>
-    </relatedLists>
-    <relatedLists>
-        <fields>TASK.SUBJECT</fields>
-        <fields>TASK.WHO_NAME</fields>
-        <fields>ACTIVITY.TASK</fields>
-        <fields>TASK.DUE_DATE</fields>
-        <fields>CORE.USERS.FULL_NAME</fields>
-        <fields>TASK.LAST_UPDATE</fields>
-        <relatedList>RelatedHistoryList</relatedList>
     </relatedLists>
     <relatedLists>
         <fields>NAME</fields>
@@ -415,6 +397,7 @@
         <sortOrder>Asc</sortOrder>
     </relatedLists>
     <relatedLists>
+        <excludeButtons>New</excludeButtons>
         <fields>NAME</fields>
         <fields>copado__Git_Org_Commit__c.NAME</fields>
         <fields>copado__Git_Org_Commit__c.copado__Commit_Date__c</fields>
