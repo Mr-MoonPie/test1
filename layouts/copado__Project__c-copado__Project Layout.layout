@@ -99,6 +99,7 @@
         <sortOrder>Asc</sortOrder>
     </relatedLists>
     <relatedLists>
+        <excludeButtons>New</excludeButtons>
         <fields>NAME</fields>
         <fields>copado__Status__c</fields>
         <fields>copado__Source_Environment__c</fields>
