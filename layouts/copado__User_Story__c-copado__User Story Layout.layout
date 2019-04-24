@@ -153,6 +153,7 @@
         <fields>copado__Status__c</fields>
     </miniLayout>
     <relatedLists>
+        <excludeButtons>New</excludeButtons>
         <fields>NAME</fields>
         <fields>copado__Git_Org_Commit__c.NAME</fields>
         <fields>copado__Git_Org_Commit__c.copado__Commit_Date__c</fields>
@@ -164,6 +165,7 @@
         <sortOrder>Desc</sortOrder>
     </relatedLists>
     <relatedLists>
+        <excludeButtons>New</excludeButtons>
         <fields>NAME</fields>
         <fields>copado__Promotion__c.NAME</fields>
         <fields>copado__Promotion__c.copado__Status__c</fields>
