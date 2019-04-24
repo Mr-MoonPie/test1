@@ -115,7 +115,7 @@
     </tabVisibilities>
     <tabVisibilities>
         <tab>copado__Getting_Started</tab>
-        <visibility>DefaultOn</visibility>
+        <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>
         <tab>copado__Git_Backup__c</tab>
