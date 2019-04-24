@@ -99,13 +99,6 @@
         <sortOrder>Asc</sortOrder>
     </relatedLists>
     <relatedLists>
-        <fields>NAME</fields>
-        <fields>copado__Planned_Date__c</fields>
-        <fields>copado__Description__c</fields>
-        <fields>copado__Status__c</fields>
-        <relatedList>copado__Release__c.copado__Project__c</relatedList>
-    </relatedLists>
-    <relatedLists>
         <excludeButtons>New</excludeButtons>
         <fields>NAME</fields>
         <fields>copado__Status__c</fields>
