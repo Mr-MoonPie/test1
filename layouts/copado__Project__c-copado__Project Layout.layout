@@ -99,20 +99,6 @@
         <sortOrder>Asc</sortOrder>
     </relatedLists>
     <relatedLists>
-        <customButtons>copado__Mass_Add_User_Stories</customButtons>
-        <fields>NAME</fields>
-        <fields>copado__User_Story_Title__c</fields>
-        <fields>copado__userStory_Role__c</fields>
-        <fields>copado__userStory_need__c</fields>
-        <fields>copado__userStory_reason__c</fields>
-        <fields>copado__Status__c</fields>
-        <fields>copado__Story_Points_SFDC__c</fields>
-        <fields>copado__Story_Points_Other__c</fields>
-        <fields>copado__Parent_Epic_Title__c</fields>
-        <fields>copado__Promote_Change__c</fields>
-        <relatedList>copado__User_Story__c.copado__Project__c</relatedList>
-    </relatedLists>
-    <relatedLists>
         <fields>TASK.SUBJECT</fields>
         <fields>TASK.WHO_NAME</fields>
         <fields>ACTIVITY.TASK</fields>
