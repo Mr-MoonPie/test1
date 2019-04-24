@@ -43,7 +43,7 @@
     <custom>false</custom>
     <tabVisibilities>
         <tab>copado__Account_Summary</tab>
-        <visibility>DefaultOn</visibility>
+        <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>
         <tab>copado__Artifact__c</tab>
@@ -115,11 +115,11 @@
     </tabVisibilities>
     <tabVisibilities>
         <tab>copado__Git_Backup__c</tab>
-        <visibility>DefaultOn</visibility>
+        <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>
         <tab>copado__Git_Repository__c</tab>
-        <visibility>DefaultOn</visibility>
+        <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>
         <tab>copado__Kanban_Board__c</tab>
