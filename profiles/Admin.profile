@@ -43,7 +43,7 @@
     <custom>false</custom>
     <tabVisibilities>
         <tab>copado__Account_Summary</tab>
-        <visibility>DefaultOn</visibility>
+        <visibility>DefaultOff</visibility>
     </tabVisibilities>
     <tabVisibilities>
         <tab>copado__Artifact__c</tab>
