@@ -93,6 +93,8 @@
         <fields>copado__userStory_reason__c</fields>
         <fields>copado__Status__c</fields>
         <relatedList>copado__User_Story__c.copado__Project__c</relatedList>
+        <sortField>copado__User_Story__c.Name</sortField>
+        <sortOrder>Asc</sortOrder>
     </relatedLists>
     <showEmailCheckbox>false</showEmailCheckbox>
     <showHighlightsPanel>false</showHighlightsPanel>
