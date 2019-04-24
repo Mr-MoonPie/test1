@@ -91,11 +91,12 @@
     </miniLayout>
     <relatedLists>
         <fields>NAME</fields>
-        <fields>copado__Start_Date__c</fields>
-        <fields>copado__End_Date__c</fields>
+        <fields>copado__User_Story_Title__c</fields>
         <fields>copado__Status__c</fields>
-        <fields>copado__Story_points__c</fields>
-        <relatedList>copado__Sprint__c.copado__Project__c</relatedList>
+        <fields>copado__Environment__c</fields>
+        <relatedList>copado__User_Story__c.copado__Project__c</relatedList>
+        <sortField>copado__User_Story_Title__c</sortField>
+        <sortOrder>Asc</sortOrder>
     </relatedLists>
     <relatedLists>
         <customButtons>copado__Mass_Add_User_Stories</customButtons>
