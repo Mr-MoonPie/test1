@@ -24,9 +24,8 @@ public class TestProductController {
 
     @isTest
     static void loopQuery() {
-        for(Product__c p : [select Id, Category__c from Product__c]){
-            //for each product look up an account
-            Account a = [select Id, Name from Account where Type=:p.Category__c limit 1];
+        for (Integer i = 0; i < 10; i++) {
+            List<Account> accounts = [SELECT Id FROM Account];
         }
     }
 /*
