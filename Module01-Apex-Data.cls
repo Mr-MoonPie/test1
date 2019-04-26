@@ -9,7 +9,8 @@ List<copado__Git_Repository__c> repos = [select Id from copado__Git_Repository__
 if(repos.size()==0) {
 	copado__Git_Repository__c repo = new copado__Git_Repository__c(Name=GITREPOSITORY_NAME);
 	repo.copado__URI__c = GITREPOSITORY_URL;
-	insert repo;
+	repo.Module_External_Id__c = GITREPOSITORY_URL;
+	upsert repo Module_External_Id__c;
 }
 
 copado__Deployment_Flow__c f = [select Id from copado__Deployment_Flow__c where Name='Copado Playground' limit 1];
