@@ -2,9 +2,15 @@
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
         <members>Admin</members>
+        <members>System Admin</members>
         <name>Profile</name>
     </types>
     <types>
+        <members>copado__Deployment__c.Modules</members>
+        <name>ListView</name>
+    </types>
+    <types>
+        <members>copado__Git_Repository__c</members>
         <members>copado__Project__c</members>
         <members>copado__User_Story__c</members>
         <name>CustomObject</name>
