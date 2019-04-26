@@ -25,7 +25,8 @@ private static Id checkTrailRepoExists() {
 	if(repos.size()==0) {
 		copado__Git_Repository__c repo = new copado__Git_Repository__c(Name=GITREPOSITORY_NAME);
 		repo.copado__URI__c = GITREPOSITORY_URL;
-		insert repo;
+		repo.Module_External_Id__c = GITREPOSITORY_URL;
+		upsert repo Module_External_Id__c;
 		return repo.Id;
 	}
 	else {
