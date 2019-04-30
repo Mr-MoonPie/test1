@@ -124,4 +124,4 @@ steps.add(createApexStep(depl.Id, 4, 'Remove Copado from index'));
 insert steps;
 
 //Add Attachment File
-insertAttachment(steps[3].Id, 'Apex', 'CopadoTrailHelper.trimMetadataCache(\'copado\', \'Copado\');');
+insertAttachment(steps[3].Id, 'Apex', 'CopadoTrailHelper.trimMetadataCache(\'copado\', \''+DESTINATION_ORG_NAME+'\');');

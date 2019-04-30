@@ -108,4 +108,10 @@ steps.add(createUrlCalloutStep(depl.Id, 2, 'Configure Sandbox', sandboxCIjobURI)
 String cacheRefreshString = createCacheRefreshString(orgCred_sandbox, u.Division);
 steps.add(createUrlCalloutStep(depl.Id, 3, 'Refresh Sandbox cache', cacheRefreshString));
 
+//Create Apex Step (clear cache of Copado metadata)
+steps.add(createApexStep(depl.Id, 4, 'Remove Copado from index'));
+
 insert steps;
+
+//Add Attachment File
+insertAttachment(steps[3].Id, 'Apex', 'CopadoTrailHelper.trimMetadataCache(\'copado\', \''+DESTINATION_ORG_NAME+'\');');
