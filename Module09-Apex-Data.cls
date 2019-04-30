@@ -1,7 +1,7 @@
 copado__Org__c dev1 = [select Id, Name, copado__Environment__c, copado__Environment__r.Name from copado__Org__c where Name='Dev1' limit 1];
 copado__Project__c p = [select Id from copado__Project__c where Name='E Bike Application' and Module_External_Id__c='EBike-Project' limit 1];
 
-copado__User_Story__c u1 = new copado__User_Story__c(Module_External_Id__c='Ebike-Module6-US1');
+copado__User_Story__c u1 = new copado__User_Story__c(Module_External_Id__c='Ebike-Module9-US1');
 u1.copado__User_Story_Title__c = 'Module 9: Deployment of UI components.';
 u1.copado__Project__c = p.Id;
 u1.copado__Status__c = 'Approved';
