@@ -71,6 +71,10 @@ private static copado__Step__c createUrlCalloutStep(Id deployId, Integer stepOrd
 	s.copado__DataJson__c = datajson;
 	return s;
 }
+private static copado__Step__c createApexStep(Id deployId, Integer stepOrder, String stepName) {
+	copado__Step__c s = createDeploymentStep(deployId, stepOrder, 'Apex', stepName);
+	return s;
+}
 private static copado__Continuous_Integration__c createCIrecord(String branchName, Id destOrgId, Id gitRepoId) {
 	copado__Continuous_Integration__c x = new copado__Continuous_Integration__c(Name=DEPLOYMENTNAME);
 	x.copado__Active__c = true;
@@ -115,7 +119,7 @@ String cacheRefreshString = createCacheRefreshString(orgCred_sandbox, u.Division
 steps.add(createUrlCalloutStep(depl.Id, 3, 'Refresh Sandbox cache', cacheRefreshString));
 
 //Create Apex Step (clear cache of Copado metadata)
-steps.add(createUrlCalloutStep(depl.Id, 3, 'Remove Copado from index', cacheRefreshString));
+steps.add(createApexStep(depl.Id, 4, 'Remove Copado from index'));
 
 insert steps;
 
