@@ -6,6 +6,11 @@
         <name>Profile</name>
     </types>
     <types>
+        <members>CopadoTrailHelper</members>
+        <members>TestCopadoTrailHelper</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
         <members>copado__Deployment__c.Modules</members>
         <name>ListView</name>
     </types>
