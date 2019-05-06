@@ -17,4 +17,5 @@ layouts/copado__User_Story__c-User Story Layout
 profiles/Admin
 
 ## Configuration Summary
-The configuration of this module enables the user to commit metadata from Salesforce in to a Git Repository.
+1. The Deployment Flow tab is enabled for the Admin user
+2. The User Story layout is updated with the Promotions related list.
