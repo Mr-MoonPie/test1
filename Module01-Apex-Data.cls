@@ -21,4 +21,4 @@ p.copado__Description__c = 'This is the record for our project where we will cre
 p.copado__Index_Metadata__c = true;
 p.copado__Start_Date__c = Date.today();
 p.copado__End_Date__c = Date.today().addDays(30);
-upsert p Module_External_Id__c;
+upsert p Module_External_Id__c
