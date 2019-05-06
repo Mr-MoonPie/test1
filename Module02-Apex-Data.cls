@@ -25,4 +25,4 @@ u2.copado__Technical_Specifications__c = 'We will commit all the Custom Tabs and
 u2.copado__Org_Credential__c = orgCredentials.get('Dev1').Id;
 u2.copado__Environment__c = orgCredentials.get('Dev1').copado__Environment__c;
 stories.add(u2);
-upsert stories Module_External_Id__c
+upsert stories Module_External_Id__c;
