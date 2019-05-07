@@ -238,7 +238,6 @@
         <visibility>Hidden</visibility>
     </tabVisibilities>
     <userLicense>Salesforce</userLicense>
-    
     <classAccesses>
         <apexClass>copado__ApexTestResultTriggerHandler</apexClass>
         <enabled>true</enabled>
