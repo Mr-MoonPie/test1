@@ -17,4 +17,10 @@ layouts/copado__User_Story__c-User Story Layout
 profiles/Admin
 
 ## Configuration Summary
-1. 
+1. Environment Layout
+	- Adding Environment Fine/Replace Editor button
+2. Deloyment Flow Layout
+	- Adding Manage Regression Testing button
+	- Adding Find/Replease Editor button
+	- Adding Static Code Analysis lookup field
+	- Adding Exclude from Auto Resolve field
