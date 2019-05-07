@@ -36,6 +36,7 @@
                 <behavior>Edit</behavior>
                 <field>copado__Type__c</field>
             </layoutItems>
+        </layoutColumns>
         <layoutColumns>
             <layoutItems>
                 <behavior>Edit</behavior>
